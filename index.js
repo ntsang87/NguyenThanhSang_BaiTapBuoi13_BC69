@@ -15,3 +15,14 @@ document.getElementById("tinhLuong").onclick = function () {
 // Đầu vào: Nhập vào giá trị 5 con số
 // Đầu ra: Tính số trung bình của 5 số trên
 // Công thức: Tổng giá trị 5 số / 5
+document.getElementById("giaTriTrungBinh").onclick = function () {
+  let so1 = +document.getElementById("so1").value;
+  let so2 = +document.getElementById("so2").value;
+  let so3 = +document.getElementById("so3").value;
+  let so4 = +document.getElementById("so4").value;
+  let so5 = +document.getElementById("so5").value;
+  let giaTriTrungBinh = (so1 + so2 + so3 + so4 + so5) / 5;
+  console.log(giaTriTrungBinh);
+  document.querySelector(".kqBai2").innerHTML =
+    "Giá trị trung bình của 5 số trên là:" + giaTriTrungBinh;
+};
