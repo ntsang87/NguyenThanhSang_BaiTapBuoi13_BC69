@@ -26,3 +26,14 @@ document.getElementById("giaTriTrungBinh").onclick = function () {
   document.querySelector(".kqBai2").innerHTML =
     "Giá trị trung bình của 5 số trên là:" + giaTriTrungBinh;
 };
+
+// bài tập 3
+// Đầu vào: cho quy đổi giá USD sang VND là 23,500, nhập vào số tiền USD muốn đổi
+// Đầu ra: yêu cầu đổi tiền USD đã nhâp ra tiền VND
+// Công thức: quy đổi tiền Việt = 23,500 * số tiền USD muốn đổi
+document.getElementById("quyDoiTienViet").onclick = function () {
+  const giaUSD = new Intl.NumberFormat("vn-Vi").format(23500);
+  let tienUSD = +document.getElementById("tienUSD").value;
+  let tienQuyDoi = giaUSD * tienUSD;
+  console.log(tienQuyDoi);
+};
