@@ -3,12 +3,12 @@
 // Đầu ra: tính lương dựa vào lương 1 ngày & số ngày làm
 // Công thức: luong = số ngày làm * 100.000VND
 document.getElementById("tinhLuong").onclick = function () {
-  const luong1Ngay = new Intl.NumberFormat("vn-Vi").format(100000);
+  const luong1Ngay = 100000;
   let soNgayLam = document.getElementById("soNgayLam").value * 1;
-  let tienLuong = luong1Ngay * soNgayLam;
+  let tienLuong = new Intl.NumberFormat("vn-Vi").format(luong1Ngay * soNgayLam);
   console.log(tienLuong);
   let thePBai1 = document.querySelector(".kqBai1");
-  thePBai1.innerHTML = "Tiền lương là: " + luong1Ngay;
+  thePBai1.innerHTML = "Tiền lương là: " + tienLuong;
 };
 
 // Bài tập 2
@@ -32,8 +32,12 @@ document.getElementById("giaTriTrungBinh").onclick = function () {
 // Đầu ra: yêu cầu đổi tiền USD đã nhâp ra tiền VND
 // Công thức: quy đổi tiền Việt = 23,500 * số tiền USD muốn đổi
 document.getElementById("quyDoiTienViet").onclick = function () {
-  const giaUSD = new Intl.NumberFormat("vn-Vi").format(23500);
+  const giaUSD = 23500;
   let tienUSD = +document.getElementById("tienUSD").value;
-  let tienQuyDoi = giaUSD * tienUSD;
+  let tienQuyDoi = new Intl.NumberFormat("vn-Vi").format(giaUSD * tienUSD);
   console.log(tienQuyDoi);
+  document.querySelector(".kqBai3").innerHTML =
+    "Số tiền quy đổi là: " + tienQuyDoi;
 };
+
+// bài tập 4
