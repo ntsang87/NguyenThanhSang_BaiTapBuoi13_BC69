@@ -63,3 +63,21 @@ document.getElementById("tinhDienTich").onclick = function () {
   thePBai4.innerHTML = "Diện tích là: " + tinhDienTich + "m2";
   document.querySelector(".bai4").appendChild(thePBai4);
 };
+
+// Bài tập 5
+// Đầu vào: nhập vào số có 2 chữ số
+// Đầu ra: tính tổng của 2 chữ số của số đó
+// Phương thức: lấy số đó chia hết cho 10 để lấy hàng chục, lấy số đó chia lấy dư cho 10 để lấy hàng đơn vị
+// Sau đó, lấy tổng của số hàng đơn vị và số hàng chục
+document.getElementById("tinhTong2KySo").onclick = function () {
+  let number = +document.getElementById("number").value;
+  let soHangChuc = Math.floor(number / 10);
+  let soHangDonVi = number % 10;
+  let tinhTong2KySo = soHangChuc + soHangDonVi;
+  console.log(soHangChuc);
+  console.log(soHangDonVi);
+  console.log(tinhTong2KySo);
+  document.querySelector(
+    ".bai5"
+  ).innerHTML += `<p>Tổng ký số là ${tinhTong2KySo} </p>`;
+};
