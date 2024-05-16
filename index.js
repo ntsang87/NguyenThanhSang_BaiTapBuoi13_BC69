@@ -6,7 +6,7 @@ document.getElementById("tinhLuong").onclick = function () {
   const luong1Ngay = 100000;
   let soNgayLam = document.getElementById("soNgayLam").value * 1;
   let tienLuong = new Intl.NumberFormat("vn-Vi").format(luong1Ngay * soNgayLam);
-  console.log(tienLuong);
+  console.log(tienLuong); // Chuyển đổi dạng số thành chuỗi , VD: 1,500,000
   let thePBai1 = document.querySelector(".kqBai1");
   thePBai1.innerHTML = "Tiền lương là: " + tienLuong;
 };
