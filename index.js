@@ -41,3 +41,25 @@ document.getElementById("quyDoiTienViet").onclick = function () {
 };
 
 // bài tập 4
+// Đầu vào: nhâp vào 2 giá trị : chiều dài & chiều rộng của hình chữ nhật
+// Đầu ra: tính ra giá trị cho Chu vi & Diện tích
+// Công thức: Chu vi = (chiều dài + rộng) *2; Diện tích = chiều dài * chiều rộng
+
+document.getElementById("tinhChuVi").onclick = function () {
+  let chieuDai = document.getElementById("chieuDai").value * 1;
+  let chieuRong = document.getElementById("chieuRong").value * 1;
+  let tinhChuVi = 2 * (chieuDai + chieuRong);
+  console.log(tinhChuVi);
+  let thePBai4 = document.createElement("p");
+  thePBai4.innerHTML = "Chu vi là:" + tinhChuVi + "m";
+  document.querySelector(".bai4").appendChild(thePBai4);
+};
+document.getElementById("tinhDienTich").onclick = function () {
+  let chieuDai = document.getElementById("chieuDai").value * 1;
+  let chieuRong = document.getElementById("chieuRong").value * 1;
+  let tinhDienTich = chieuDai * chieuRong;
+  console.log(tinhDienTich);
+  let thePBai4 = document.createElement("p");
+  thePBai4.innerHTML = "Diện tích là: " + tinhDienTich + "m2";
+  document.querySelector(".bai4").appendChild(thePBai4);
+};
