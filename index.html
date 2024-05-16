@@ -16,6 +16,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./index.css" />
   </head>
 
   <body>
@@ -23,7 +24,7 @@
     <div class="container">
       <h2>Bài tập 1: Tính tiền lương nhân viên</h2>
 
-      <div class="mb-3">
+      <div class="mb-3 col-md-2">
         <label for="" class="form-label"></label>
         <input
           type="text"
@@ -34,68 +35,72 @@
           placeholder="Số Ngày Làm"
         />
       </div>
-      <button class="btn btn-primary" id="tinhLuong">Tính Lương</button>
+      <button class="btn btn-info rounded-pill" id="tinhLuong">
+        Tính Lương
+      </button>
       <p class="kqBai1"></p>
     </div>
     <!-- bài tập 2 -->
     <div class="container">
       <h2>Bài tập 2: Tính giá trị trung bình</h2>
-      <div class="mb-3">
-        <label for="" class="form-label"></label>
-        <input
-          type="text"
-          class="form-control"
-          name=""
-          id="so1"
-          aria-describedby="helpId"
-          placeholder="Mời nhập số thứ 1"
-        />
+      <div class="bai2Content d-flex .justify-content-md-start">
+        <div class="mb-3 me-3">
+          <label for="" class="form-label"></label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="so1"
+            aria-describedby="helpId"
+            placeholder="Mời nhập số thứ 1"
+          />
+        </div>
+        <div class="mb-3 me-3">
+          <label for="" class="form-label"></label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="so2"
+            aria-describedby="helpId"
+            placeholder="Mời nhập số thứ 2"
+          />
+        </div>
+        <div class="mb-3 me-3">
+          <label for="" class="form-label"></label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="so3"
+            aria-describedby="helpId"
+            placeholder="Mời nhập số thứ 3"
+          />
+        </div>
+        <div class="mb-3 me-3">
+          <label for="" class="form-label"></label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="so4"
+            aria-describedby="helpId"
+            placeholder="Mời nhập số thứ 4"
+          />
+        </div>
+        <div class="mb-3 me-3">
+          <label for="" class="form-label"></label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="so5"
+            aria-describedby="helpId"
+            placeholder="Mời nhập số thứ 5"
+          />
+        </div>
       </div>
-      <div class="mb-3">
-        <label for="" class="form-label"></label>
-        <input
-          type="text"
-          class="form-control"
-          name=""
-          id="so2"
-          aria-describedby="helpId"
-          placeholder="Mời nhập số thứ 2"
-        />
-      </div>
-      <div class="mb-3">
-        <label for="" class="form-label"></label>
-        <input
-          type="text"
-          class="form-control"
-          name=""
-          id="so3"
-          aria-describedby="helpId"
-          placeholder="Mời nhập số thứ 3"
-        />
-      </div>
-      <div class="mb-3">
-        <label for="" class="form-label"></label>
-        <input
-          type="text"
-          class="form-control"
-          name=""
-          id="so4"
-          aria-describedby="helpId"
-          placeholder="Mời nhập số thứ 4"
-        />
-      </div>
-      <div class="mb-3">
-        <label for="" class="form-label"></label>
-        <input
-          type="text"
-          class="form-control"
-          name=""
-          id="so5"
-          aria-describedby="helpId"
-          placeholder="Mời nhập số thứ 5"
-        />
-      </div>
-      <button class="btn btn-primary" id="giaTriTrungBinh">
+      <button class="btn btn-info rounded-pill" id="giaTriTrungBinh">
         Tính giá trị trung bình các số đã nhâp
       </button>
       <p class="kqBai2"></p>
@@ -103,7 +108,7 @@
     <!-- Bài tập 3 -->
     <div class="container bai3">
       <h2>Bài tập 3: Quy đổi tiền</h2>
-      <div class="mb-3">
+      <div class="mb-3 me-3 col-md-3">
         <label for="" class="form-label"></label>
         <input
           type="text"
@@ -114,7 +119,7 @@
           placeholder="Mời nhập số tiền USD"
         />
       </div>
-      <button class="btn btn-primary" id="quyDoiTienViet">
+      <button class="btn btn-info rounded-pill" id="quyDoiTienViet">
         quy đổi sang tiền Việt
       </button>
       <p class="kqBai3"></p>
@@ -122,7 +127,7 @@
     <!-- bài tập 4 -->
     <div class="container bai4">
       <h2>Bài tập 4: Tính diện tích & chu vi hình chữ nhật</h2>
-      <div class="mb-3">
+      <div class="mb-3 col-md-3">
         <label for="" class="form-label"></label>
         <input
           type="text"
@@ -133,7 +138,7 @@
           placeholder="Mời nhập vào chiều dài"
         />
       </div>
-      <div class="mb-3">
+      <div class="mb-3 col-md-3">
         <label for="" class="form-label"></label>
         <input
           type="text"
@@ -144,8 +149,10 @@
           placeholder="Mời nhập vào chiều rộng"
         />
       </div>
-      <button class="btn btn-primary" id="tinhChuVi">Tính chu vi</button>
-      <button class="btn btn-outline-danger" id="tinhDienTich">
+      <button class="btn btn-info rounded-pill" id="tinhChuVi">
+        Tính chu vi
+      </button>
+      <button class="btn btn-info rounded-pill" id="tinhDienTich">
         Tính diện tích
       </button>
     </div>
@@ -163,7 +170,7 @@
           placeholder="Vui lòng nhập vào số có 2 chữ số"
         />
       </div>
-      <button class="btn btn-outline-danger" id="tinhTong2KySo">
+      <button class="btn btn-info rounded-pill" id="tinhTong2KySo">
         Tính tổng 2 ký số
       </button>
     </div>
